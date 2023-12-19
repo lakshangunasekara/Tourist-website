@@ -1,0 +1,45 @@
+@font-face {
+    font-family: ostrich;
+    src: url(../fonts/OstrichSansRoundedMedium-BZjG.otf);
+}
+.nav-bar{
+    height: 50px;
+    background-color: rgba(6, 17, 37, 0.5);
+    font-family: ostrich, sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+/*     border-radius: 0 0 50px 50px;
+ */    width: 100%;
+    margin: 0 auto;
+}
+.nav-bar > a > li{
+    background-color: rgba(6, 17, 37, 0);
+    padding: 10px 25px;   
+    list-style-type: none;
+    transition: 0.2s;
+    cursor: pointer;
+    
+}
+.nav-bar > a > li:hover{
+    background-color: rgb(161, 161, 161);
+    font-size: 2rem;
+    letter-spacing: 4px;
+    padding: 7px 25px; 
+
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+#tab{
+    background-color: rgb(161, 161, 161);
+    font-size: 2rem;
+    letter-spacing: 4px;
+    padding: 7px 25px; 
+}

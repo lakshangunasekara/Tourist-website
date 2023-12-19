@@ -1,0 +1,110 @@
+@font-face {
+    font-family: ostrich;
+    src: url(../fonts/OstrichSansRoundedMedium-BZjG.otf);
+}
+@font-face {
+    font-family: josefinreg;
+    src: url(../fonts/JosefinSansRegular-x3LYV.ttf);
+}
+@font-face {
+    font-family: josefinlite;
+    src: url(../fonts/JosefinSansLight-ZVEll.ttf);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.295)),url("../images/gallery/Galle-Travel-Guide.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Menu List */
+
+.menu-list li {
+    margin: 0;
+    line-height: 25px;
+    font-family: josefinlite;
+    list-style: none;
+}
+.menu-list>ul>li{
+    font-family: josefinreg;
+    margin: 10px auto;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.2rem;
+    color: white;
+}
+.menu-list>ul>li>ul>li{
+    cursor: pointer;
+    text-align: center;
+    transition: 300ms;
+}
+.menu-list>ul>li>ul>li:hover{
+    opacity: 70%;
+    line-height: 35px;
+    font-size: 1.7rem;
+}
+.menu-list{
+    width: 30%;
+    height: 85vh;
+    padding: 25px;
+    margin: 0 30px 0px 0;
+    border-radius: 25px 100px;
+    background-color: rgba(0, 0, 0, 0.699);
+    text-decoration: none;
+    overflow-y: scroll;
+    float: left;
+}
+.menu-list::-webkit-scrollbar {
+    display: none;
+}
+.menu-list {
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+
+/* Details Panel */
+
+.details-panel{
+/*     background-color: rgba(255, 255, 255, 0.699);
+ */ background-image: linear-gradient(to right bottom, rgba(135, 232, 245, 0.6), rgba(238, 182, 240,0.5));
+    height: 85vh;
+    padding: 25px;
+    width: 65%;
+    margin: 30px 0px 30px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    font-family: josefinreg;
+    transition: 400ms;
+}
+
+.details-panel::-webkit-scrollbar {
+    display: none;
+}
+.details-panel h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+.details-panel h2{
+    margin:0 25px 25px 25px;
+    text-align: justify;
+}
+.details-panel li{
+    font-family: josefinlite;
+    margin: 5px 0 5px 75px;
+    text-align: left;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}

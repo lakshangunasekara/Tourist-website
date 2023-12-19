@@ -1,0 +1,73 @@
+@font-face {
+    font-family: ostrich;
+    src: url(../fonts/OstrichSansRoundedMedium-BZjG.otf);
+}
+@font-face {
+    font-family: josefinreg;
+    src: url(../fonts/JosefinSansRegular-x3LYV.ttf);
+}
+@font-face {
+    font-family: josefinlite;
+    src: url(../fonts/JosefinSansLight-ZVEll.ttf);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.295)),url("../images/about-us/sri-lanka-travel.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+p{
+  padding: 10px 0;
+}
+
+.container {
+  margin: 30px auto;
+  border-radius: 5px;
+  background-color: #f2f2f27c;
+  padding: 20px 30px;
+  font-family: josefinreg;
+  width: 80%;
+  height: 80%;
+  overflow-y: scroll;
+  text-align: justify;
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+  border: 3px solid black;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.middle-line{
+  height: 75%;
+  width: 3px;
+  background-color: black;
+  position: absolute;
+  top: 100px;
+  left: 61.5%;
+}
+
+.imagediv{
+  width: 100%;
+  display: flex;
+  justify-content: center ;
+  margin-top: 50px;
+}
+.right-panel p{
+  text-align: center;
+}
+.left-panel{
+  width: 62%;
+  float: left;
+}
+
+.right-panel{
+  width:32%;
+  float: right;
+}

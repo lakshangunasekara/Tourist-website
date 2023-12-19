@@ -1,0 +1,65 @@
+@font-face {
+    font-family: ostrich;
+    src: url(fonts/OstrichSansRoundedMedium-BZjG.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#button{
+    background-color: rgba(6, 17, 37, 0.4);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateZ(90deg);
+    margin: none;
+
+}
+#button:hover{
+    background-color: rgba(6, 17, 37, 0.6);
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 2 1;
+}
+.nav-bar{
+    position: absolute;
+    font-family: ostrich;
+    height: 50px;
+    background-color: rgba(6, 17, 37, 0.4);
+    font-family: ostrich, sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    width: 97vw;
+/*     padding-right: 30px; */
+}
+.nav-bar > a > li{
+/*     background-color: rgba(6, 60, 161, 0.1);
+ */    padding: 10px 2vw;   
+    list-style-type: none;
+    transition: 0.2s;
+    cursor: pointer;    
+}
+.nav-bar > a > li:hover{
+    background-color: rgb(161, 161, 161);
+    font-size: 2rem;
+    letter-spacing: 4px;
+    padding: 7px 25px; 
+
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: white;
+}
+  

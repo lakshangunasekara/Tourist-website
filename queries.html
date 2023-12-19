@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nav-bar.css">
+    <link rel="stylesheet" href="css/queries.css">
+    <title>Queries</title>
+</head>
+<body>
+    <div class="nav-container">
+        <div class="nav-bar" id="nav">            
+            <a href="about-us.html"><li>About Us</li></a>
+            <a href="queries.html"><li id="tab">Queries</li></a>
+            <a href="to-do.html"><li>To-Do List</li></a>
+            <a href="gallery.html"><li>Gallery</li></a>
+            <a href="locations.html"><li>Locations</li></a>
+            <a href="sri-lanka.html"><li>Sri Lanka</li></a>
+            <a href="index.html"><li>Home</li></a>
+            
+        </div>
+        
+    </div>
+    <div class="container contact">
+        <h1 style="text-align: center; margin-bottom: 30px;">Add a Query</h1>
+        <form>
+          <div class="row">
+            <div class="column-1">
+              <h3>First Name</h3>
+            </div>
+            <div class="column-2">
+              <input type="text" placeholder="Enter your first name">
+            </div>
+          </div>
+          <div class="row">
+            <div class="column-1">
+              <h3 for="lname">Last Name</h3>
+            </div>
+            <div class="column-2">
+              <input type="text" placeholder="Enter your last name">
+            </div>
+          </div>
+          <div class="row">
+            <div class="column-1">
+              <h3 for="mail">E-mail</h3>
+            </div>
+            <div class="column-2">
+              <input type="email" placeholder="Enter your e-mail">
+            </div>
+          </div>
+          <div class="row">
+            <div class="column-1">
+              <h3 for="description">Description</h3>
+            </div>
+            <div class="column-2">
+              <textarea id="subject" placeholder="Tell us your needs.." style="height:330px"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Submit" onclick="sub()">
+          </div>
+        </form>
+      </div>
+  </div>
+</body>
+<script>
+    function sub(){
+      alert("Thank you for contacting us. We will have a look into your query as soon as possible.")
+    }
+  </script>
+</html>

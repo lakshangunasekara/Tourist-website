@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nav-bar.css">
+    <link rel="stylesheet" href="css/to-do.css">
+    <script src="https://www.unpkg.com/vue@next"></script>
+    <title>To-Do List</title>
+</head>
+<body>
+  <div class="nav-container">
+    <div class="nav-bar" id="nav">            
+        <a href="about-us.html"><li>About Us</li></a>
+        <a href="queries.html"><li>Queries</li></a>
+        <a href="to-do.html"><li id="tab">To-Do List</li></a>
+        <a href="gallery.html"><li>Gallery</li></a>
+        <a href="locations.html"><li>Locations</li></a>
+        <a href="sri-lanka.html"><li>Sri Lanka</li></a>
+        <a href="index.html"><li>Home</li></a>
+        
+    </div>
+
+</div>
+
+    <div id="app" style="margin-top: 50px;">
+
+        <div class="container">
+            <h1 class="title" style="color: white; margin-bottom: 15px;">To-Do List</h1>
+            <div class="text-panel">
+                <input type="text" id="text-box" v-model="newTodo" @keyup.enter="add" placeholder="Type your todo here...">
+                
+            </div>
+            <div class="button-panel">
+                <button @click="clearAll(id)" id="clearAll">Clear All</button>
+                <button id="add" @click="add">Add</button>
+            </div>
+            <div class="todo-panel">
+                <li class="todo-temp" v-for="(todos, id) in existingTodo" :key="id"> 
+                    <h3>{{id+1}}. {{todos.text}}</h3>
+                    <button id="delete" @click="del(id)"><h2>X</h2></button>
+                </li>
+            </div>
+        </div>
+        
+      </div>
+    
+    <script>
+    
+      const app = Vue.createApp({
+        name: 'App',
+        data(){
+          return{
+            newTodo: '',
+            existingTodo: [{
+              text: "Pay the hotel bill",
+              id: 1
+            },{
+              text: "Visit the super market",
+              id: 2
+            },{
+              text: "Go Colombo after two days",
+              id: 3
+            }]
+          }
+        },
+        methods:{
+          add(){
+            this.existingTodo.push({
+              text: this.newTodo,
+              id: new Date().valueOf()
+              })
+            this.newTodo=''
+          },
+          del(id){
+            this.existingTodo.splice(id, 1)
+          },
+          clearAll(id){
+            this.existingTodo.splice(id)
+            
+          }
+          
+        }
+      })
+      app.mount('#app')
+    </script>
+</body>
+
+</html>

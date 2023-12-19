@@ -1,0 +1,81 @@
+@font-face {
+    font-family: vegan;
+    src: url(../fonts/Quicksand-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: ostrich;
+    src: url(../fonts/OstrichSansRoundedMedium-BZjG.otf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+    background-image: linear-gradient(to top, rgba(153, 67, 67, 0.263), rgba(0, 0, 0, 0.295)), url("../images/home/wall-5.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Wall */
+
+.main-wall{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.main-wall>p {
+    font-family: vegan;
+    font-size: 5vw;
+    color: rgb(148, 198, 226);
+    margin-left: 2vw;
+    width: fit-content;
+    padding: 0 20px;
+    border-left: 1vw solid rgb(148, 198, 226);
+}
+
+.explore{
+    display: block;
+    padding: 10px 25px;
+    font-size: 2vw;
+    position: absolute;
+    top: 65vh;
+    left: 5vw;
+    background-color: rgb(255, 255, 255);
+    opacity: .9;
+    border: none;
+    border-radius: 0 15px;
+    overflow: hidden;
+}
+.explore:hover{
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+
+}
+
+/* Copyright */
+
+.copyright{
+    position: absolute;
+    font-family: ostrich;
+    font-weight: bold;
+    letter-spacing: 5px;
+    width: 100%;
+    bottom: .5vw;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+h5{
+    margin: 0 auto;
+}
+
+#tab{
+    background-color: rgb(161, 161, 161);
+    font-size: 2rem;
+    letter-spacing: 4px;
+    padding: 7px 25px; 
+}

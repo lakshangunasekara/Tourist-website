@@ -1,0 +1,41 @@
+@font-face {
+    font-family: josefinlite;
+    src: url(../fonts/JosefinSansLight-ZVEll.ttf);
+}
+@font-face {
+    font-family: josefinreg;
+    src: url(../fonts/JosefinSansRegular-x3LYV.ttf);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.295));
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    font-family: josefinlite;
+}
+.container{
+    width: 80%;
+    margin: 20px auto 0 auto;
+    background-color: rgb(25, 89, 146);
+    padding: 25px;
+    height: 85vh;
+    border-radius: 25px;
+    overflow: scroll;
+}
+.container::-webkit-scrollbar {
+    display: none;
+}
+.container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+p{
+    color: white;
+    margin: 25px;
+}

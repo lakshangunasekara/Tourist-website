@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations</title>
+    <link rel="stylesheet" href="css/locations.css">
+    <link rel="stylesheet" href="css/nav-bar.css">
+    <script src="scripts/details.js"></script>
+</head>
+<body>
+    <div class="nav-container">
+        <div class="nav-bar" id="nav">            
+            <a href="about-us.html"><li>About Us</li></a>
+            <a href="queries.html"><li>Queries</li></a>
+            <a href="to-do.html"><li>To-Do List</li></a>
+            <a href="gallery.html"><li>Gallery</li></a>
+            <a href="locations.html"><li id="tab">Locations</li></a>
+            <a href="sri-lanka.html"><li>Sri Lanka</li></a>
+            <a href="index.html"><li>Home</li></a>
+            
+        </div>
+        
+    </div>
+
+    <div class="container">
+        <div class="menu-list">
+            <ul>
+                <hr width="75%" style="height:2px;border-width:0;color:gray;background-color:gray; margin:auto;">
+                <li>Central Province
+                    <ul>
+                        <li onclick="info('kandy')">Kandy</li>
+                        <li onclick="info('matale')">Matale</li>
+                        <li onclick="info('nuwara-eliya')">Nuwara eliya</li>
+                    </ul>
+                </li>
+                <hr width="75%" style="height:2px;border-width:0;color:gray;background-color:gray; margin:auto;">
+                <li>Eastern Province
+                    <ul>
+                        <li onclick="info('ampara')">Ampara</li>
+                        <li onclick="info('batticaloa')">Batticaloa</li>
+                        <li onclick="info('trincomalee')">Trincomalee</li>
+                    </ul>
+                </li>
+                <hr width="75%" style="height:2px;border-width:0;color:gray;background-color:gray; margin:auto;">
+                <li>Northern Province
+                    <ul>
+                        <li onclick="info('jaffna')">Jaffna</li>
+                        <li onclick="info('kilinochchi')">Kilinochchi</li>
+                        <li onclick="info('mannar')">Mannar</li>
+                        <li onclick="info('mullaitivu')">Mullaitivu</li>
+                        <li onclick="info('vavuniya')">Vavuniya</li>
+                    </ul>
+                </li>
+                <hr width="75%" style="height:2px;border-width:0;color:gray;background-color:gray; margin:auto;">
+                <li>Southern Province
+                    <ul>
+                        <li onclick="info('galle')">Galle</li>
+                        <li onclick="info('hambantota')">Hambantota</li>
+                        <li onclick="info('matara')">Matara</li>
+                    </ul>
+                </li>
+                <hr width="75%" style="height:2px;border-width:0;color:gray;background-color:gray; margin:auto;">
+                <li>Western Province
+                    <ul>
+                        <li onclick="info('colombo')">Colombo</li>
+                        <li onclick="info('gampaha')">Gampaha</li>
+                        <li onclick="info('kalutara')">Kalutara</li>
+                    </ul>
+                </li>
+                <hr width="75%" style="height:2px;border-width:0;color:gray;background-color:gray; margin:auto;">
+                <li>North Western Province
+                    <ul>
+                        <li onclick="info('kurunegala')">Kurunegala</li>
+                        <li onclick="info('puttalam')">Puttalam</li>
+                    </ul>
+                </li>
+                <hr width="75%" style="height:2px;border-width:0;color:gray;background-color:gray; margin:auto;">
+                <li>North Central Province
+                    <ul>
+                        <li onclick="info('anuradhapura')">Anuradhapura</li>
+                        <li onclick="info('polonnaruwa')">Polonnaruwa</li>
+                    </ul>
+                </li>
+                <hr width="75%" style="height:2px;border-width:0;color:gray;background-color:gray; margin:auto;">
+                <li>Uva Province
+                    <ul>
+                        <li onclick="info('badulla')">Badulla</li>
+                        <li onclick="info('monaragala')">Monaragala</li>
+                    </ul>
+                </li>
+                <hr width="75%" style="height:2px;border-width:0;color:gray;background-color:gray; margin:auto;">
+                <li>Sabaragamuwa Province
+                    <ul>
+                        <li onclick="info('kegalle')">Kegalle</li>
+                        <li onclick="info('ratnapura')">Ratnapura</li>
+                    </ul>
+                </li>
+                <hr width="75%" style="height:2px;border-width:0;color:gray;background-color:gray; margin:auto;">
+            </ul>
+        </div>
+        
+        <div class="details-panel" id="details">
+            <h1>Places to visit in <br> Sri Lanka</h1>
+            <h2>Here, you will find some information about places you can visit, hotels etc. in Sri Lanka.
+                So, you can use them to plan your journey.
+            </h2>
+            <h2>Please click on a district name to view the locations in that district.</h2>
+        </div>
+    </div>
+    <div id="kandy">
+        <h1>Kandy</h1>
+        <h2><ul>Places to visit: 
+            <li>Temple of the Sacred Tooth Relic</li>
+            <li>Udawattekele Sanctuary</li>
+            <li>Bahiravokanda Vihara Buddha Statue</li>
+            <li>Kandy View Point</li>
+            <li>Lankatilaka Temple</li>
+            <li>Ceylon Tea Museum</li>
+            <li>World Buddhist Museum</li>
+            <li>Pallekele International Cricket Stadium</li>
+            <li>Royal Palace of Kandy</li>
+            <li>Hanthana Mountain Range</li>
+        </ul></h2>
+        <h2><ul>Hotels:
+            <li>Kings Pavilion</li>
+            <li>Amaya Hills Kandy</li>
+            <li>Earl's Regent Hotel</li>
+        </ul></h2>
+    </div>
+    <div id="matale">
+        <h1>Matale</h1>
+        <h2><ul>Places to visit:
+            <li>Knuckles Mountain Range</li>
+            <li>Sri Muthumariamman Temple</li>
+            <li>Aluvihara Rock Cave Temple</li>
+            <li>Nalanda Gedige</li>
+            <li>Sera Ella falls</li>
+            <li>Riverston</li>
+            <li>Aakarsha Gem House</li>
+            <li>Hunnasgiriya Water Fall</li>
+            <li>Upper Hunnasfall Waterfall</li>
+        </ul></h2>
+        <h2><ul>Hotels:
+            <li>Jim’s Farm Villas</li>
+            <li>Strathisla Guest House</li>
+            <li>The Grand Mountain Hotel</li>
+        </ul></h2>
+    </div>
+    <div id="nuwara-eliya">
+        <h1>Nuwara Eliya</h1>
+        <h2><ul>Places to Visit:
+            <li>Horton Plains National Park</li>
+            <li>Bluefield Tea Gardens</li>
+            <li>Gregory Lake</li>
+            <li>Lover's Leap Falls</li>
+            <li>Hakgala Botanic Gardens</li>
+            <li>Sita Temple</li>
+            <li>Bomburu Ella Waterfall</li>
+            <li>Victoria Park of Nuwara Eliya</li>
+            <li>Ambewela Farms</li>
+            <li>St Clair's Falls</li>
+        </ul></h2>
+        <h2><ul>Hotels:
+            <li>Araliya Red</li>
+            <li>The Grand Hotel</li>
+            <li>Galway Heights Hotel</li>
+        </ul></h2>
+    </div>
+    <div id="ampara">
+        <h1>Ampara</h1>
+        <h2><ul>Places to visit:
+            <li>Kumana National Park</li>
+            <li>Gal Oya National Park - The Crossing</li>
+            <li>Deegavapi Stupa</li>
+            <li>Rajagala</li>
+            <li>Lahugala Magul Maha Viharaya</li>
+            <li>Buddhangala Monastery</li>
+            <li>Lahugala Kitulana National Park</li>
+            <li>Crocodile Rock</li>
+            <li> Aranthalawa Massacre Site</li>
+        </ul></h2>
+        <h2><ul>Hotels:
+            <li>Thompukandam Village Resort</li>
+            <li>Quench Inn</li>
+            <li>Gal Oya Lodge</li>
+        </ul></h2>
+    </div>
+    <div id="batticaloa">
+        <h1>Batticaloa</h1>
+        <h2><ul>Places to visit:
+            <li>Kallady Beach</li>
+            <li>Batticaloa Fort</li>
+            <li>Kallady Bridge</li>
+            <li>Batticaloa Gate</li>
+            <li>Batticaloa Lighthouse</li>
+            <li>Batticaloa Eco Park</li>
+            <li>St. Mary's Cathedral</li>
+        </ul></h2>
+        <h2><ul>Hotels:
+            <li>Riviera Resort</li>
+            <li>Grand Star Guest House</li>
+            <li>Beni Beach Resort</li>
+        </ul></h2>
+    </div>
+    <div id="trincomalee">
+        <h1>Trincomalee</h1>
+        <h2><ul>Places to visit:
+            <li>Seruwila Mangala Raja Maha Vihara</li>
+            <li>Koneswaram Temple</li>
+            <li>Marble Beach</li>
+            <li>Sri Pathrakali Amman Temple</li>
+            <li>Fort Frederick</li>
+            <li>Sri Lanka Navy Museum</li>
+            <li>Kanniya Hot Springs</li>
+            <li>Trincomalee Beach</li>
+            <li>Orr's Hill Army Museum</li>
+            <li>Uppuveli</li>
+        </ul></h2>
+        <h2><ul>Hotels:
+            <li>Amaranthe Bay Resort</li>
+            <li>Anantamaa</li>
+            <li>Trinco Blu By Cinnamon</li>
+        </ul></h2>
+    </div>
+    <div id="jaffna">
+        <h1>Jaffna</h1>
+        <h2><ul>Places to visit:
+            <li>Nagadipa Purana Vihara</li>
+            <li>Dambakola Patuna Sangamitta Temple</li>
+            <li>Nallur Kovil</li>
+            <li>Neduntheevu (Delft Island)</li>
+            <li>Naga Pooshani Ambal Kovil</li>
+            <li>Jaffna Fort</li>
+            <li>Casuarina Beach</li>
+            <li>Kayts Causeway</li>
+            <li>Keerimalai Hot springs</li>
+        </ul></h2>
+        <h2><ul>Hotels:
+            <li>Fox Resorts Jaffna</li>
+            <li>Jetwing Jaffna</li>
+            <li>The Thinnai</li>
+        </ul></h2>
+    </div>
+    <div id="kilinochchi">
+        <h1>Kilinochchi</h1>
+        <h2><ul>Places to visit:
+            <li>Kilinochchi Lumbini Viharaya</li>
+            <li>Chundikulam National Park</li>
+            <li>Killinochchi War Memorial Monument</li>
+            <li>Green Park</li>
+        </ul></h2>
+        <h2><ul>Hotels:
+            <li>Friends Paradise</li>
+            <li>Barathi Star Hotel</li>
+            <li>Hotel Atna</li>
+        </ul></h2>
+    </div>
+    <div id="mannar">
+        <h1>Mannar</h1>
+        <h2><ul>Places to visit:
+            <li>Thanthirimale</li>
+            <li>Mannar Island</li>
+            <li>Shrine of Our Lady of Madhu</li>
+            <li>Mannar Fort</li>
+            <li>The Doric at Arippu</li>
+            <li>Mannar Bird Sanctuary</li>
+            <li>Adam’s Bridge</li>
+            <li>Thiruketheeswaram Kovil</li>
+            <li>Yodha Wewa</li>
+        </ul></h2>
+        <h2><ul>Hotels:
+            <li>The Palmyrah House</li>
+            <li>Pesalai Beach View Hotel</li>
+            <li>Hotel Agape</li>
+        </ul></h2>
+    </div>
+    <div id="mullaitivu">
+        <h1>Mullaitivu</h1>
+        <h2><ul>Places to visit:
+            <li>Chundikulam National Park</li>
+            <li>Kokkilai Lagoon</li>
+            <li>Iranamadu Tank</li>
+            <li>Nay Aru</li>
+            <li>Kokkilai Sanctuary</li>
+            <li>Nanthi Lagoon</li>
+            <li>Puthukkudiyiruppu War Museum</li>
+            <li>Arisimale Beach</li>
+        </ul></h2>
+        <h2><ul>Hotels:
+            <li>Ocean Park Resort</li>
+        </ul></h2>
+    </div>
+    <div id="vavuniya">
+        <h1>Vavuniya</h1>
+        <h2><ul>Places to visit:
+            <li>Kandasamy Kovil</li>
+            <li>Grand Jummah Mosque</li>
+            <li>Vavuniya Archaeological Museum</li>
+            <li>St Anthony's Church</li>
+            <li>Sri Muththumari Amman Temple</li>
+            <li>Avusatha Pitiya Bridge</li>
+        </ul></h2>
+        <h2><ul>Hotels:
+            <li>Hotel Oviya</li>
+            <li>Thampa Hotel</li>
+            <li>Hotel Nelly Star</li>
+        </ul></h2>
+    </div>
+    <div id="galle">
+        <h1>Galle</h1>
+        <h2><ul>Places to visit:
+            <li>Galle Fort</li>
+            <li>Sea Turtle Farm Galle Mahamodara</li>
+            <li>Old Town of Galle and its Fortifications</li>
+            <li>Galle Fort Lighthouse</li>
+            <li>Dalawella Beach</li>
+            <li>Galle International Cricket Stadium</li>
+            <li>Dutch Hospital Shopping Precinct</li>
+            <li>Rumasalla Mountain</li>
+            <li>Yatagala Raja Maha Viharaya</li>
+            <li>Maritime Archeology Museum</li>
+            <li>Lankagama Duwili Ella Falls</li>
+        </ul></h2>
+        <h2><ul>Hotels:
+            <li>Le Grand Galle</li>
+            <li>Amari Galle Sri Lanka</li>
+            <li>Mango House</li>
+        </ul></h2>
+    </div>
+    <div id="matara">
+        <h1>Matara</h1>
+        <h2><ul>Places to visit:
+            <li>Weherahena Buddhist Temple</li>
+            <li>The Shrine of Our Lady of Matara</li>
+            <li>Matara Paravi Duwa Temple</li>
+            <li>Weligama Beach</li>
+            <li>Polhena Beach</li>
+            <li>Star Fort</li>
+            <li>Kirala Kelle Wetlands</li>
+            <li>Snake Farm</li>
+            <li>Hiriketiya Beach</li>
+            <li>Tea House</li>
+        </ul></h2>
+        <h2><ul>Hotels:
+            <li>Weligama Bay Marriott Resort & Spa</li>
+            <li>W15</li>
+            <li>Culture Resort</li>
+        </ul></h2>
+    </div>
+    <div id="hambantota">
+        <h1>Hambantota</h1>
+        <h2><ul>Places to visit:
+            <li>Ridiyagama Safari Park</li>
+            <li>Mirijjawila Botanic Gardens</li>
+            <li>Dry Zone Botanic Gardens - Hambantota</li>
+            <li>Walawe River Safari</li>
+            <li>Birds Research Center & Resort</li>
+            <li>Agro Technology Park</li>
+            <li>Mahapelessa Hot Springs</li>
+            <li>Magampura Ruhunu Heritage Museum</li>
+            <li>Mahinda Rajapaksa International Cricket Stadium</li>
+            <li>Kumana National Park</li>
+        </ul></h2>
+        <h2><ul>Hotels:
+            <li>Shangri-La Hambantota</li>
+            <li>Birds Resort Hambantota</li>
+            <li>The Oasis Ayurveda Beach Resort</li>
+        </ul></h2>
+    </div>
+    <div id="colombo">
+        <h1>Colombo</h1>
+        <h2><ul>Places to visit:
+            <li>Gangaramaya (Vihara) Buddhist Temple</li>
+            <li>Kelaniya Raja Maha Vihara</li>
+            <li>Mount Lavinia Beach</li>
+            <li>Colombo National Museum</li>
+            <li>Viharamahadevi Park</li>
+            <li>Jami Ul-Alfar Mosque</li>
+            <li>Independence Square</li>
+            <li>Dutch Hospital Shopping Precinct</li>
+            <li>Galle Face Green</li>
+            <li>Temple of Sri Kailawasanathan Swami Devasthanam Kovil</li>
+            <li>St Anthony's Shrine</li>
+        </ul></h2>
+        <h2><ul>Hotels:
+            <li>Shangri-La Colombo</li>
+            <li>Cinnamon Lakeside Colombo</li>
+            <li>Cinnamon Grand Colombo</li>
+            <li>The Kingsbury Hotel</li>
+            <li>Taj Samudra, Colombo</li>
+        </ul></h2>
+    </div>
+    <div id="gampaha">
+        <h1>Gampaha</h1>
+        <h2><ul>Places to visit:
+            <li>Maligatenna Rajamaha Viharaya</li>
+            <li>Guruge Nature Park</li>
+            <li>Henerathgoda Botanical Garden</li>
+            <li>Attanagalla Raja Maha Viharaya</li>
+            <li>Lenawara Rajamaha Viharaya</li>
+        </ul></h2>
+        <h2><ul>Hotels:
+            <li>Riverside Hotel</li>
+            <li>Nature Bliss Holidays</li>
+            <li>Hotel Vintop</li>
+        </ul></h2>
+    </div>
+    <div id="kalutara">
+        <h1>Kalutara</h1>
+        <h2><ul>Places to visit:
+            <li>Kalutara Bodhiya</li>
+            <li>Richmond Castle</li>
+            <li>Kalutara Beach</li>
+            <li>Thudugala Ella Waterfall</li>
+            <li>Fa Hien Caves</li>
+            <li>Holy Cross Church Kalutara</li>
+            <li>Bodhinagala Forest Hermitage</li>
+            <li>Asokaramaya Buddhist Temple</li>
+        </ul></h2>
+        <h2><ul>Hotels:
+            <li>Asokaramaya Buddhist Temple</li>
+            <li>Mermaid Hotel & Club</li>
+            <li>Royal Palms Beach Hotel</li>
+            <li>Avani Kalutara Resort</li>
+        </ul></h2>
+    </div>
+    <div id="kurunegala">
+        <h1>Kurunegala</h1>
+        <h2><ul>Places to visit:
+            <li>Ridi Viharaya</li>
+            <li>Ethagala</li>
+            <li>Panduwasnuwara Kingdom</li>
+            <li>Deduru Oya Reservoir</li>
+            <li>World's Tallest Granite Samadhi Buddha Statue</li>
+            <li>Maraluwawa Rajamaha Viharaya</li>
+        </ul></h2>
+        <h2><ul>Hotels:
+            <li>Kandyan Reach Hotel</li>
+            <li>Hotel Blue Sky</li>
+            <li>Earl's Red Kurunegala</li>
+        </ul></h2>
+    </div>
+    <div id="puttalam">
+        <h1>Puttalam</h1>
+        <h2><ul>Places to visit:
+            <li>St. Anne’s Church</li>
+            <li>Paththini Amman Kovil</li>
+            <li>Bommakka Amman Kovil</li>
+            <li>Muthumariamman Temple</li>
+        </ul></h2>
+        <h2><ul>Hotels:
+            <li>Wilpattu Nature Resort</li>
+            <li>Taj Residence</li>
+            <li>Amith's White House</li>
+        </ul></h2>
+    </div>
+    <div id="anuradhapura">
+        <h1>Anuradhapura</h1>
+        <h2><ul>Places to visit:
+            <li>Ruwanwelisaya</li>
+            <li>Jaya Sri Maha Bodhi</li>
+            <li>Mihintale</li>
+            <li>Wilpattu National Park</li>
+            <li>Ritigala Forest Monastery</li>
+            <li>Isurumuniya Temple</li>
+            <li>Jethawanaramaya Stupa</li>
+            <li>Abhayagiri Dagaba</li>
+            <li>Ranmasu Uyana</li>
+            <li>Dagoba of Thuparama</li>
+            <li>Natural Black Water Pond ( Kalu Diya Pokuna )</li>
+        </ul></h2>
+        <h2><ul>Hotels:
+            <li>Heritage Hotel Anuradhapura</li>
+            <li>Rajarata Hotel</li>
+            <li>Aryana Hotel</li>
+            <li>Hotel Alakamanda</li>
+        </ul></h2>
+    </div>
+    <div id="polonnaruwa">
+        <h1>Polonnaruwa</h1>
+        <h2><ul>Places to visit:
+            <li>Gal Vihara</li>
+            <li>Polonnaruwa Vatadage</li>
+            <li>Lankathilaka Image House</li>
+            <li>Wasgamuwa National Park</li>
+            <li>Medirigiriya Vatadagex</li>
+            <li>Sandakada Pahana</li>
+            <li>Rankoth Vehera</li>
+            <li>Archaeological Museum</li>
+            <li>Somawathiya Chaitya</li>
+            <li>Lotus Pond</li>
+        </ul></h2>
+        <h2><ul>Hotels:
+            <li>EKHO Lake House</li>
+            <li>Tishan Holiday Resort</li>
+            <li>Seyara Holiday Resort</li>
+            <li>Giritale Hotel</li>
+        </ul></h2>
+    </div>
+    <div id="badulla">
+        <h1>Badulla</h1>
+        <h2><ul>Places to visit:
+            <li>Dunhinda Falls</li>
+            <li>Dhowa Rock Temple</li>
+            <li>Bogoda Wooden Bridge</li>
+            <li>Muthiyangana Raja Maha Viharaya</li>
+            <li>Fox Hill</li>
+            <li>Narangala</li>
+            <li>St Mark’s Church</li>
+            <li>Wewessa Ella Waterfall</li>
+        </ul></h2>
+        <h2><ul>Hotels:
+            <li>Mount View Hotel</li>
+            <li>Dunhinda Falls Inn</li>
+            <li>Ella Breeze Homestay</li>
+        </ul></h2>
+    </div>
+    <div id="monaragala">
+        <h1>Monaragala</h1>
+        <h2><ul>Places to visit:
+            <li>Arugam Bay Beach</li>
+            <li>Kumana National Park</li>
+            <li>Udawalawa National Park</li>
+            <li>Okkampitiya</li>
+            <li>Biso Pokuna</li>
+        </ul></h2>
+        <h2><ul>Hotels:
+            <li>Birds Paradise Inn</li>
+            <li>Hotel Elaine</li>
+            <li>Capital Resort Inn</li>
+        </ul></h2>
+    </div>
+    <div id="kegalle">
+        <h1>Kegalle</h1>
+        <h2><ul>Places to visit:
+            <li>Millennium Elephant Foundation</li>
+            <li>Pinnawala Jumbos</li>
+            <li>Algama Falls - Sri Craft</li>
+            <li>Elephant Care Relief Foundation</li>
+        </ul></h2>
+        <h2><ul>Hotels:
+            <li>Aarya Hotel</li>
+            <li>The Golden Residence</li>
+            <li>Basilico Homestay</li>
+        </ul></h2>
+    </div>
+    <div id="ratnapura">
+        <h1>Ratnapura</h1>
+        <h2><ul>Places to visit:
+            <li>Maha Saman Dewalaya</li>
+            <li>Sri Sankapala Raja Maha Viharaya</li>
+            <li>Kalthota Doowili Ella Falls</li>
+            <li>Kajugaswatta Temple</li>
+            <li>Gemmological Museum</li>
+            <li>Pothgul Vihare Ratnapura</li>
+            <li>National Museum Ratnapura</li>
+            <li>Katugas Ella Falls</li>
+        </ul></h2>
+        <h2><ul>Hotels:
+            <li>Centauria Hill Resort</li>
+            <li>Ahaspokuna Bush Walks Camp</li>
+            <li>Sapphire Holiday Resort</li>
+        </ul></h2>
+    </div>
+</body>
+</html>

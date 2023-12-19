@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Menu</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar" id="nav">            
+            <a href="about-us.html"><li>About Us</li></a>
+            <a href="queries.html"><li>Queries</li></a>
+            <a href="to-do.html"><li>To-Do List</li></a>
+            <a href="gallery.html"><li>Gallery</li></a>
+            <a href="locations.html"><li>Locations</li></a>
+            <a href="sri-lanka.html"><li>Sri Lanka</li></a>
+            <a href="index.html"><li id="tab">Home</li></a>
+            
+        </div>
+        <div id="button" onclick="myFunction()">
+            &times;
+        </div>
+        
+    </div>
+</body>
+<script>
+    function myFunction(){
+            if (document.getElementById("nav").style.display=="flex"){
+                document.getElementById("nav").style.display="none";
+                document.getElementById("button").innerHTML="="
+            }else{
+                document.getElementById("nav").style.display="flex";
+                document.getElementById("button").innerHTML="X"
+            }
+        }
+</script>
+</html>
